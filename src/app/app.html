@@ -1,0 +1,57 @@
+<main class="min-h-screen w-full bg-base-300">
+  <header class="bg-base-100 w-full flex items-center justify-center">
+    <h1 class="py-5">Dough🍕Calculator</h1>
+  </header>
+  <section class="flex flex-col items-center justify-center gap-4 mt-10">
+    <h3 class="text-xl">👤How many people will be eating?</h3>
+    <app-number-spinner [(ngModel)]="personCount" [min]="0" [max]="99"></app-number-spinner>
+    <div class="divider"></div>
+
+    <h3>Select your hydration level</h3>
+    <input type="range" min="0" max="100" [(ngModel)]="hydrationLevel" class="range" />
+    <span class="text-xl">{{ hydrationLevel }}%</span>
+    <div class="divider"></div>
+    <div class="flex gap-4 items-center">
+      <input
+        type="checkbox"
+        [(ngModel)]="useBiga"
+        class="checkbox checkbox-primary checkbox-xl"
+        id="bigaCheckbox"
+      />
+      <label for="bigaCheckbox"
+        ><h3>I want to use <span class="italic">biga</span></h3></label
+      >
+    </div>
+
+    @if(useBiga) {
+    <div class="flex flex-col items-center w-80 justify-center gap-4">
+      <h3 class="mt-2 text-center w-full">Select the percentage of biga in the dough</h3>
+      <input type="range" min="0" max="100" [(ngModel)]="bigaPercent" class="range w-2/3" />
+      <span class="text-xl">{{ bigaPercent }}%</span>
+    </div>
+    }
+    <div class="divider"></div>
+  </section>
+  <section class="flex items-center justify-center">
+    <div class="card bg-primary w-1/2 flex items-center justify-center p-2">
+      <h2>Results</h2>
+      <div class="flex justify-between items-center w-full">
+        <span class="text-2xl">🍞Flour</span>
+        <span class="text-2xl">{{ flour }}</span>
+      </div>
+      <div class="flex justify-between items-center w-full">
+        <span class="text-2xl">💧Water</span>
+        <span class="text-2xl">{{ water }}</span>
+      </div>
+      <div class="flex justify-between items-center w-full">
+        <span class="text-2xl">🧂Salt</span>
+        <span class="text-2xl">{{ salt }}</span>
+      </div>
+      <div class="flex justify-between items-center w-full">
+        <span class="text-2xl">🧑‍🍳Yeast</span>
+        <span class="text-2xl">{{ yeast }}</span>
+      </div>
+    </div>
+  </section>
+  <app-floating-info-button></app-floating-info-button>
+</main>
