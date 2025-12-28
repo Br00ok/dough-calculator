@@ -16,7 +16,7 @@ export interface FormValues {
   standalone: true,
   imports: [CommonModule, FormsModule, TranslatePipe],
   template: `
-    <div class="card bg-base-100 shadow-xl mb-4 min-h-[400px]">
+    <div class="card bg-base-100 shadow-xl mb-4 min-h-100">
       <div class="card-body">
         <!-- Number of pizzas -->
         <div class="form-control w-full mb-2">
@@ -84,7 +84,7 @@ export interface FormValues {
         <!-- Preferment block -->
         <div
           class="bg-primary/10 p-4 rounded-box mb-4 overflow-hidden transition-all duration-300"
-          [class.h-0]="!formValues.usePreferment"
+          [class.hidden]="!formValues.usePreferment"
           [class.h-auto]="formValues.usePreferment"
         >
           <div class="form-control w-full">
