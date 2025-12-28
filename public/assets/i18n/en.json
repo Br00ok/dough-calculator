@@ -1,0 +1,41 @@
+{
+  "APP": {
+    "TITLE": "Pizza Dough Calculator",
+    "SUBTITLE": "Br0oK's pizza",
+    "INSTALL": "Install App",
+    "INSTALL_TITLE": "Install this app",
+    "INSTALL_DESC": "Install this app on your device to use it like a native app.",
+    "INSTALL_BUTTON": "Install",
+    "CANCEL": "Cancel"
+  },
+  "THEME": {
+    "DARK": "Dark",
+    "LIGHT": "Light"
+  },
+  "FORM": {
+    "NUM_PIZZAS": "Number of pizzas",
+    "BALL_WEIGHT": "Weight per ball (g)",
+    "HYDRATION": "Hydration",
+    "USE_PREFERMENT": "Use preferment (biga)",
+    "PREFERMENT_PERCENTAGE": "% flour in preferment",
+    "CALCULATE": "Calculate ingredients"
+  },
+  "RESULTS": {
+    "TITLE": "Ingredients",
+    "TOTAL_WEIGHT": "Total dough weight",
+    "FLOUR": "Flour",
+    "WATER": "Water",
+    "SALT": "Salt",
+    "YEAST": "Yeast",
+    "PREFERMENT": "Preferment",
+    "FINAL_DOUGH": "Final dough",
+    "ADD_PREFERMENT": "+ Preferment",
+    "ALL": "All",
+    "TOTAL_INGREDIENTS": "Total ingredients"
+  },
+  "INFO": {
+    "TITLE": "About This Calculator",
+    "DESCRIPTION": "Hi there 👋!<br><br>I really enjoy making pizza, but there’s always one annoying part: doing all the calculations for the dough proportions. That’s why I created this app — to make those calculations easy and help people focus on what really matters: making great pizza.<br><br>Built with ❤️ by {{author}}.",
+    "CLOSE": "Close"
+  }
+}

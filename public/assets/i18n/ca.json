@@ -1,0 +1,36 @@
+{
+  "APP": {
+    "TITLE": "Calculadora de Massa de Pizza",
+    "SUBTITLE": "Pizza de Br0oK"
+  },
+  "THEME": {
+    "DARK": "Fosc",
+    "LIGHT": "Clar"
+  },
+  "FORM": {
+    "NUM_PIZZAS": "Nombre de pizzes",
+    "BALL_WEIGHT": "Pes per bola (g)",
+    "HYDRATION": "Hidratació",
+    "USE_PREFERMENT": "Usar preferment (biga)",
+    "PREFERMENT_PERCENTAGE": "% farina en preferment",
+    "CALCULATE": "Calcular ingredients"
+  },
+  "RESULTS": {
+    "TITLE": "Ingredients",
+    "TOTAL_WEIGHT": "Pes total de la massa",
+    "FLOUR": "Farina",
+    "WATER": "Aigua",
+    "SALT": "Sal",
+    "YEAST": "Llevat",
+    "PREFERMENT": "Preferment",
+    "FINAL_DOUGH": "Massa final",
+    "ADD_PREFERMENT": "+ Preferment",
+    "ALL": "Tot",
+    "TOTAL_INGREDIENTS": "Ingredients totals"
+  },
+  "INFO": {
+    "TITLE": "Sobre Aquesta Calculadora",
+    "DESCRIPTION": "Hola 👋!<br><br>M’encanta fer pizza, però sempre hi ha una part una mica feixuga: haver de fer càlculs per a les proporcions de la massa. Per això he creat aquesta app, per facilitar aquests càlculs i ajudar que la gent pugui fer pizza de manera més fàcil i sense complicacions.<br><br>Fet amb ❤️ per {{author}}.",
+    "CLOSE": "Tancar"
+  }
+}

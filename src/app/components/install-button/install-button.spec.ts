@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NumberSpinner } from './number-spinner';
+import { InstallButton } from './install-button';
 
-describe('NumberSpinner', () => {
-  let component: NumberSpinner;
-  let fixture: ComponentFixture<NumberSpinner>;
+describe('InstallButton', () => {
+  let component: InstallButton;
+  let fixture: ComponentFixture<InstallButton>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NumberSpinner]
+      imports: [InstallButton]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(NumberSpinner);
+    fixture = TestBed.createComponent(InstallButton);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
