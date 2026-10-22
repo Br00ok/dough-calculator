@@ -1,59 +1,77 @@
-# DoughCalculator
+# 🍕 Dough Calculator
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+Plan your next pizza night with a little more precision. Dough Calculator is a browser-based tool that turns your dough-ball count, weight, and hydration into a clear ingredient list in grams. Want to use a preferment? Switch it on to see the ingredients split between the preferment and the final dough. 🥖
 
-## Development server
+## ✨ Features
 
-To start a local development server, run:
+- 🧮 Calculate flour, water, salt, and yeast for your pizza dough.
+- ⚖️ Set the number and weight of dough balls, and choose hydration from 0% to 100%.
+- 🥣 Add an optional preferment and choose the percentage of flour used in it.
+- 📋 See ingredient amounts for the preferment, final dough, and full recipe.
+- 🌍 Use the app in English, Spanish, or Catalan.
+- 🌗 Switch between light and dark themes; your language and theme are saved in your browser.
+- 📲 Install it as a Progressive Web App (PWA) in supported browsers.
+- 📱 Use it on desktop or mobile.
 
-```bash
-ng serve
-```
+### 📝 Recipe assumptions
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The calculator uses a fixed salt ratio of 2.8% and yeast ratio of 0.1% of the total flour. When preferment is enabled, it uses 50% hydration and assigns 90% of the recipe's yeast to the preferment. These are built-in assumptions, not configurable inputs.
 
-## Code scaffolding
+## 🛠️ Tech stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- 🅰️ Angular 21 with TypeScript
+- 🎨 Tailwind CSS 4 and daisyUI
+- 🌐 ngx-translate for translations
+- 🔄 RxJS
+- 🖼️ lucide-angular icons
+- 📦 Angular Service Worker for production PWA support
+- 🧪 Vitest via the Angular CLI for unit tests
 
-```bash
-ng generate component component-name
-```
+## 🚀 Getting started
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 📋 Prerequisites
 
-```bash
-ng generate --help
-```
+- Node.js compatible with Angular 21
+- npm (the project specifies npm 11.6.4)
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### 📥 Install dependencies
 
 ```bash
-ng test
+npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
+### ▶️ Start the development server
 
 ```bash
-ng e2e
+npm start
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Open [http://localhost:4200](http://localhost:4200). The app reloads automatically as you edit source files.
 
-## Additional Resources
+### 🏗️ Build for production
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm run build
+```
+
+The production build is written to `dist/`, with the service worker enabled.
+
+### 🧪 Run unit tests
+
+```bash
+npm test
+```
+
+## 📂 Project structure
+
+- `src/app/services/dough-calculator.service.ts` — recipe calculation logic.
+- `src/app/components/calculator-form/` — recipe inputs.
+- `src/app/components/results-display/` — ingredient breakdown.
+- `public/assets/i18n/` — English, Spanish, and Catalan translations.
+- `public/` — static assets and the web app manifest.
+
+## 📄 License
+
+This project's original code and materials are available under the [Dough Calculator Non-Commercial License](./LICENSE). You may use and share them for non-commercial purposes, but commercial use is not permitted without prior written permission from the copyright holders. This is a source-available, non-commercial license, not an OSI-approved open-source license.
+
+Third-party components and assets have their own licenses. See [THIRD_PARTY_LICENSES.TXT](./THIRD_PARTY_LICENSES.TXT) and each component's license for details. 🍕
